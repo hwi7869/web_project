@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background: #4CAF50;
+    padding: 1rem;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 60px;
+  }
+  
+  header h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .add-button {
+    background-color: white;
+    color: #4CAF50;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .add-button:hover {
+    background-color: #e0f5e9;
+  }
+  
+  .intro {
+    text-align: center;
+    margin: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 1rem;
+    margin: .1rem;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .card h2 {
+    font-size: 1.25rem;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  footer {
+    background: #eee;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 700px) {
+    .restaurants {
+      flex-direction: column;
+      align-items: center;
+    }
+/*   
+    header h1 {
+      text-align: center;
+    } */
+  }
+  

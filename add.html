@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>맛집 추가</title>
+  <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+  <link rel="stylesheet" href="css/add.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="images/Sasanggu.png" alt="사상구 로고" class="logo" />
+      <h1>괘법동 맛집 추가</h1>
+      <a href="index.html" class="add-button">홈으로</a>
+    </div>
+  </header>
+
+  <section class="intro">
+    <p>괘법동의 숨은 맛집을 추천해주세요!</p>
+  </section>
+
+  <section class="form-section">
+    <form action="https://naver.com" method="POST">
+      <table>
+        <tr>
+          <th><label for="name">맛집 이름</label></th>
+          <td><input type="text" id="name" name="name" required placeholder="정확한 가게이름 기입"></td> <!-- required는 필수로 채워야하는 -->
+        </tr>
+        <tr>
+          <th><label for="location">위치</label></th>
+          <td><input type="text" id="location" name="location" required placeholder="상세주소 기입"></td>
+        </tr>
+        <tr>
+          <th><label for="price">가격 평균</label></th>
+          <td><input type="text" id="price" name="price" placeholder="대표메뉴 가격을 써도 됩니다"></td>
+        </tr>
+        <tr>
+          <th><label for="parking">주차 가능 여부</label></th>
+          <td>
+            <select id="parking" name="parking">
+              <option value="모름">모름</option>
+              <option value="불가능">불가능</option>
+              <option value="가능">가능</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="review">한줄 후기</label></th>
+          <td><textarea id="review" name="review" maxlength="100"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="btn-sub">
+            <button type="submit" class="add-button">제출하기</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </section>
+
+  <footer>
+    <small>&copy; 2025 문화콘텐츠학과 202306002 권휘</small>
+  </footer>
+</body>
+</html>
