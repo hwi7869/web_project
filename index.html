@@ -6,6 +6,9 @@
   <title>문화콘텐츠학과 202306002 권휘</title>
   <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -102,17 +105,20 @@
         </div>
         <!-- 더 많은 카드들을 쉽게 추가 가능 -->
       </section>
+      <button id="topBtn" title="맨 위로" onclick="scrollToTop()">↑</button>
     
       <footer>
         <small>&copy; 2025 문화콘텐츠학과 202306002 권휘</small>
       </footer>
-      <!-- 0602 마무리
-       해야할거 푸터 카피라이트 정리, 멘트 변경(0605 완)
-       가게 이미지 찾고 
-       스토어 html 복붙
-       add.html에 인풋 더 진하게 맛집이름 위치 이런 택스트 위치 조정(0605 완)
-       모바일 로고정리, 한번더 확인 (0605 완)
-       store html a태그로 가게 네이버 지도 연결, 새로운 td 로 지도로 보기 칸-->
+      <script>
+  // 부드럽게 맨 위로 스크롤
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
        
 </body>
 </html>

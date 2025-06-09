@@ -1,5 +1,5 @@
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Poor Story", system-ui;
     margin: 0;
     padding: 0;
     background: #f9f9f9;
@@ -52,47 +52,6 @@
     font-size: 1.2rem;
   }
   
-  .restaurants {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-  
-  .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #ccc;
-    padding: 1rem;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s;
-  }
-  
-  .card:hover {
-    transform: scale(1.03);
-  }
-  
-  .card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-  
-  footer {
-    background: #eee;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  .form-section {
-    display: flex;
-    justify-content: center;
-    
-  }
-  
   table {
     background: white;
     width: 100%;
@@ -139,4 +98,15 @@
   
   button[type="submit"]:hover {
     background-color: #45a049;
+  }
+
+  footer {
+    background: #eee;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  .form-section {
+    display: flex;
+    justify-content: center;
   }
